@@ -10,11 +10,6 @@ terraform {
   }
 }
 
-provider "ibm" {
-  region = "ca-tor"
-  ibmcloud_api_key = "<api_key>"
-}
-
 # Create a Cloud Object Storage instance
 resource "ibm_resource_instance" "cos_instance" {
   name              = "lee-test99-openshift-backup-cos"
